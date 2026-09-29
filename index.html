@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>찌뿌둥</title>
+<style>
+  :root {
+    --bg: #ffffff;
+    --surface: #f6f7f9;
+    --text: #1a1d21;
+    --text-muted: #5c646e;
+    --border: #e3e6ea;
+    --accent: #2f6fed;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #16181c;
+      --surface: #1e2126;
+      --text: #e8eaed;
+      --text-muted: #a0a7b0;
+      --border: #2e3238;
+      --accent: #6b9bff;
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg: #16181c;
+    --surface: #1e2126;
+    --text: #e8eaed;
+    --text-muted: #a0a7b0;
+    --border: #2e3238;
+    --accent: #6b9bff;
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    margin: 0;
+    padding: 64px 16px 72px;
+    background: var(--bg);
+    color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo",
+                 "Malgun Gothic", "Noto Sans KR", sans-serif;
+    line-height: 1.7;
+    font-size: 16px;
+    word-break: keep-all;
+  }
+
+  main { max-width: 520px; margin: 0 auto; }
+
+  h1 {
+    font-size: 1.75rem;
+    margin: 0 0 8px;
+    letter-spacing: -0.02em;
+  }
+
+  .tagline { color: var(--text-muted); margin: 0 0 36px; }
+
+  nav { display: grid; gap: 12px; }
+
+  nav a {
+    display: block;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 16px 18px;
+    color: var(--accent);
+    text-decoration: none;
+    font-weight: 600;
+  }
+
+  nav a span {
+    display: block;
+    color: var(--text-muted);
+    font-weight: 400;
+    font-size: 0.875rem;
+    margin-top: 2px;
+  }
+
+  footer {
+    margin-top: 48px;
+    padding-top: 20px;
+    border-top: 1px solid var(--border);
+    color: var(--text-muted);
+    font-size: 0.85rem;
+  }
+</style>
+</head>
+<body>
+<main>
+
+  <h1>찌뿌둥</h1>
+  <p class="tagline">바른 자세를 함께 만들어가는 자세 케어 앱</p>
+
+  <nav>
+    <a href="privacy.html">
+      개인정보처리방침
+      <span>어떤 정보를 수집하고 어떻게 다루는지 안내합니다.</span>
+    </a>
+    <a href="account-deletion.html">
+      계정 및 데이터 삭제 안내
+      <span>계정과 저장된 데이터를 삭제하는 방법을 안내합니다.</span>
+    </a>
+  </nav>
+
+  <footer>
+    문의 — <a href="mailto:wjswowns1122@gmail.com">wjswowns1122@gmail.com</a>
+  </footer>
+
+</main>
+</body>
+</html>
